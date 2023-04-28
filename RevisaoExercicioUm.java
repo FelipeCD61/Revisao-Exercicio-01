@@ -6,7 +6,7 @@ public class RevisaoExercicioUm {
     int ContadorErro = 0;
     String StatusCartao, Sintoma, Contato, RetornoViagem;
 
-    System.out.println("Informe seu nome:");
+    System.out.print("Informe seu nome: ");
     String nome = sc.next();
     System.out.print("Informe sua idade: ");
     int idade = sc.nextInt();
@@ -32,6 +32,7 @@ public class RevisaoExercicioUm {
         System.out.println("\nNão foi possível realizar o diagnóstico. \nGentileza procurar ajuda médica caso apareça algum sintoma.");
         break;
       }
+      ContadorErro = 0;//Reinicio o contador
 
       while (true) {
         System.out.println("Teve algum dos sintomas recentemente? Como dor de cabeça, febre, náusea, dor articular, gripe. (Digite 'sim' ou 'nao'): ");
@@ -52,6 +53,7 @@ public class RevisaoExercicioUm {
         System.out.println("\nNão foi possível realizar o diagnóstico. \nGentileza procurar ajuda médica caso apareça algum sintoma.");
         break;
       }
+      ContadorErro = 0;//Reinicio o contador
 
       while (true) {
         System.out.println("Teve contato com pessoas com sintomas gripais nos últimos dias? (Digite 'sim' ou 'nao'): ");
@@ -72,6 +74,7 @@ public class RevisaoExercicioUm {
         System.out.println("\nNão foi possível realizar o diagnóstico. \nGentileza procurar ajuda médica caso apareça algum sintoma.");
         break;
       }
+      ContadorErro = 0;//Reinicio o contador
 
       while (true) {
         System.out.println("Está retornando de viagem realizada no exterior? (Digite 'sim' ou 'nao'): ");
@@ -93,6 +96,7 @@ public class RevisaoExercicioUm {
         System.out.println("\nNão foi possível realizar o diagnóstico. \nGentileza procurar ajuda médica caso apareça algum sintoma.");
         break;
       }
+      ContadorErro = 0;//Reinicio o contador
       
       System.out.printf("\nNome: " + nome + "\nIdade: " + idade);
       System.out.printf ("\nCartão de vacina está em dia: " + StatusCartao + "\nTeve sintomas recentemente: " + Sintoma + "\nTeve contato com pessoas infectadas: " + Contato + "\nEstá retornando de viagem: " + RetornoViagem);
